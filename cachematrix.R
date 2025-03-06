@@ -3,13 +3,22 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
-
+makeCacheMatrix <- function(){
+mat <- NULL
+Inv_cache <- NULL
+setMatrix <- function(x) {
+mat <<- x
+Inv_cache <<- NULL
 }
-
-
-## Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+getInverse <- function(){
+if (is.null(inv_cache)) {
+inv_cache <<<- solve(mat)
+}
+Inv_cache
+}
+list(setMatrix = setMatrix, getInverse = getInverse)
+}
+cacheSolve <- function(x,...) {
+Inv_cache <- xSgetInverse()
+inv cache
 }
